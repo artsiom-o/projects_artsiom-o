@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Google advance search</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            .advanced-search {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .search-field {
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
+                margin-bottom: 10px;
+                max-width: 500px;
+                width: 100%;
+            }
+        
+            .search-field label {
+                flex: 1;
+                white-space: nowrap;
+            }
+        
+            .search-field input[type="text"] {
+                flex: 2;
+            }
+        
+            .search-button {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Google Search</a></li>
+                    <li><a href="image.html">Image Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img src="https://freepngimg.com/thumb/google/153884-logo-google-png-download-free.png" alt="Google logo" class="google-logo">
+            <form action="https://www.google.com/search" method="GET">
+                <div class="advanced-search">
+                    <div class="search-field">
+                        <label for="all-words">Find page with all thiks words:</label>
+                        <input type="text" name="as_q" id="all-words" class="text-input">
+                    </div>
+                    <div class="search-field">
+                        <label for="exact-phrase">Find pages with this exact word or phrase:</label>
+                        <input type="text" name="as_epq" id="exact-phrase" class="text-input">
+                    </div>
+                    <div class="search-field">
+                        <label for="any-words">Find pages with any of these words:</label>
+                        <input type="text" name="as_oq" id="any-words" class="text-input">
+                    </div>
+                    <div class="search-field">
+                        <label for="none-words">Find pages with none pf these words:</label>
+                        <input type="text" name="as_eq" id="none-words" class="text-input">
+                    </div>
+                    <div class="search-button">
+                        <input type="submit" value="Advanced Search" class="blue-button"> 
+                    </div>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
