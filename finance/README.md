@@ -21,3 +21,4 @@ Buy stocks
 Sell stocks
 View transaction history
 View portfolio
+Change password 
